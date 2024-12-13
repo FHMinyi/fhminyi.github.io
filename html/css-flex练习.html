@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>官网</title>
+	<style>
+		* {
+			font-family: Arial;
+			font-size: 14px;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		body {
+			background-image: url(../res/flex布局图片/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		header {
+			height: 70px;
+			background-color: rgba(0, 0, 0, 0.7);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+		}
+
+
+		header ul {
+			display: flex;
+		}
+
+		header ul li a {
+			color: white;
+			border: 1px solid white;
+			border-radius: 8px;
+			padding: 10px;
+			margin-right: 10px;
+		}
+
+		header ul li:last-child a {
+			margin-right: 0;
+		}
+
+		.content {
+			height: 100vh;
+			display: flex;
+		}
+
+		.content ul {
+			display: flex;
+			margin: auto;
+		}
+
+		.content ul li {
+			display: flex;
+			width: 180px;
+			height: 200px;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			margin: 0 10px;
+			transition: 200ms;
+		}
+
+		.content ul li:hover {
+			box-shadow: 0 0 20px gray;
+			cursor: pointer;
+		}
+
+		.content ul li:nth-child(1) {
+			background-color: #595CA8;
+		}
+
+		.content ul li:nth-child(2) {
+			background-color: #FF9D2E;
+		}
+
+		.content ul li:nth-child(3) {
+			background-color: #01A6DE;
+
+		}
+
+		.content ul li:nth-child(4) {
+			background-color: #015E91;
+
+		}
+
+		.content ul li:nth-child(5) {
+			background-color: #1DC128;
+
+		}
+
+		.content ul li span {
+			color: white;
+			font-size: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="../res/flex布局图片/logo.png" alt="logo">
+		<ul>
+			<li><a href="#">国内校区</a></li>
+			<li><a href="#">缅甸校区</a></li>
+			<li><a href="#">非洲校区</a></li>
+			<li><a href="#">美国校区</a></li>
+		</ul>
+	</header>
+	<div class="content">
+		<ul>
+			<li>
+				<img src="../res/flex布局图片/item1.png" alt="">
+				<span>我的邮箱</span>
+			</li>
+			<li>
+				<img src="../res/flex布局图片/item2.png" alt="">
+				<span>云服务</span>
+			</li>
+			<li>
+				<img src="../res/flex布局图片/item3.png" alt="">
+				<span>手机课堂</span>
+			</li>
+			<li>
+				<img src="../res/flex布局图片/item4.png" alt="">
+				<span>微信服务</span>
+			</li>
+			<li>
+				<img src="../res/flex布局图片/item5.png" alt="">
+				<span>在线客服</span>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
